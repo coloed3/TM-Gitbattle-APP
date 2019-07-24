@@ -1,19 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Popular from "./components/Popular";
 
+class App extends React.Component {
+  render() {
+    return (
+      <div className="container">
+        <Popular />
 
-class App extends React.Component{
-    render(){
-        return (
-            <div> Hello-World !</div>
-        );
-    }
+        
+      </div>
+    );
+  }
 }
 
+// render react
+ReactDOM.render(<App />, document.getElementById("app"));
 
-ReactDOM.render(
-    // react element
-    <App/>, document.getElementById('app')
-    //where to render the element to. 
-)
